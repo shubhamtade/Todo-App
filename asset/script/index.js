@@ -53,6 +53,9 @@
 const modal = document.getElementById("myModal");
 const openModalBtn = document.getElementById("openModalBtn");
 const closeBtn = document.querySelector(".close");
+const addBtn = document.querySelector(".add");
+const inputTask = document.querySelector(".input_task");
+const checkBox = document.querySelector("input[name=checkbox]");
 
 // Open the modal when the button is clicked
 openModalBtn.addEventListener("click", () => {
@@ -64,9 +67,22 @@ closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
+addBtn.addEventListener("click", () => {
+  alert(inputTask.value);
+  inputTask.value = "";
+});
+
 // Close the modal if user clicks outside the modal content
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
+  }
+});
+
+checkBox.addEventListener("change", (e) => {
+  if (e.target.checked) {
+    console.log("ON");
+  } else {
+    console.log("OFF");
   }
 });

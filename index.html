@@ -27,7 +27,17 @@
       </div>
     </header>
 
-    <main class="main_container"></main>
+    <main class="main_container">
+      <div class="card_container">
+        <div id="card">
+          <input type="checkbox" id="task" name="checkbox" />
+          <label for="task" class="lable"><p>I have a bike</p></label>
+          <button>
+            <span class="material-symbols-outlined"> delete </span>
+          </button>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <button id="openModalBtn">ADD TASK</button>
@@ -36,9 +46,11 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <!-- Close button -->
-        <input type="text" placeholder="Enter your task" />
-        <span class="add">&xoplus;</span>
-        <span class="close">&xotime;</span>
+        <input type="text" placeholder="Enter your task" class="input_task" />
+        <div class="btn">
+          <span class="add">ADD TASK</span>
+          <span class="close">CLOSE</span>
+        </div>
         <!-- Add your form or additional content here -->
       </div>
     </div>
