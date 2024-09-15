@@ -29,24 +29,32 @@
 
     <main class="main_container">
       <div class="card_container">
-        <div id="card">
+        <!-- <div id="taskList">
           <input type="checkbox" id="task" name="checkbox" />
           <label for="task" class="lable"><p>I have a bike</p></label>
-          <button>
+          <button class="task_btn">
             <span class="material-symbols-outlined"> delete </span>
           </button>
-        </div>
+        </div> -->
       </div>
     </main>
 
     <footer>
-      <button id="openModalBtn">ADD TASK</button>
+      <button id="openModalBtn" class="add_task">ADD TASK</button>
+      <button id="openModalBtn" class="clear_all" onclick="clearTasks()">
+        CLEAR ALL
+      </button>
     </footer>
 
     <div id="myModal" class="modal">
       <div class="modal-content">
         <!-- Close button -->
-        <input type="text" placeholder="Enter your task" class="input_task" />
+        <input
+          type="text"
+          placeholder="Enter your task"
+          class="input_task"
+          id="taskInput"
+        />
         <div class="btn">
           <span class="add">ADD TASK</span>
           <span class="close">CLOSE</span>
@@ -54,16 +62,6 @@
         <!-- Add your form or additional content here -->
       </div>
     </div>
-
-    <!-- <div class="container"> -->
-    <!-- Add an input field for adding tasks -->
-    <!-- <input type="text" id="taskInput" placeholder="Add a task..." /> -->
-    <!-- Display the tasks -->
-    <!-- <ul id="taskList"></ul> -->
-    <!-- Buttons for adding and removing tasks -->
-    <!-- <button onclick="addTask()">Add Task</button>
-      <button onclick="clearTasks()">Clear All</button>
-    </div> -->
 
     <script src="asset/script/index.js"></script>
   </body>

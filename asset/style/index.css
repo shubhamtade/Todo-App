@@ -55,7 +55,7 @@ header {
     padding: 10% 0;
     /* background-color: black; */
 
-    #card {
+    #taskList {
       /* width: 100%; */
       display: flex;
       justify-content: space-between;
@@ -132,7 +132,7 @@ header {
       }
     }
 
-    #card:hover {
+    #taskList:hover {
       box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.212);
     }
   }
@@ -146,7 +146,8 @@ footer {
   padding: 1rem; /* Adjust as needed */
   text-align: center;
 
-  button {
+  .add_task,
+  .clear_all {
     padding: 10px 50px;
     border: 4px solid #000;
     outline: none;
@@ -160,12 +161,20 @@ footer {
     cursor: pointer;
   }
 
-  button:hover {
+  .clear_all:hover {
     opacity: 1;
     background-color: #f1ece6;
-    color: gray;
+    color: red;
 
-    border-color: #d98326;
+    border-color: red;
+  }
+
+  .add_task:hover {
+    opacity: 1;
+    background-color: #f1ece6;
+    color: green;
+
+    border-color: green;
   }
 }
 
